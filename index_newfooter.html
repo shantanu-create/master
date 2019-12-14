@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x:hidden!important">
+<head>
+	<title>The Ten Minute Million</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:title" content="The Ten Minute Million"/>
+	<meta property="og:description" content="E-Cell, IIT Bombay proudly presents one-of-a-kind on spot funding platform, The 10 Minute Million.
+Pitch your idea to our panel of 16+ esteemed investors and grab this opportunity to get a funding of INR 1.6 million in just 10 minutes!"/>
+	<meta property="og:image" content="images/thumbnail.jpg?v=1"/>
+	<meta name="twitter:title" content="The Ten Minute Million"/>
+	<meta name="twitter:description" content="E-Cell, IIT Bombay proudly presents one-of-a-kind on spot funding platform, The 10 Minute Million.
+Pitch your idea to our panel of 16+ esteemed investors and grab this opportunity to get a funding of INR 1.6 million in just 10 minutes!"/>
+	<meta name="twitter:image" content="images/thumbnail.jpg"/>
+	<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Palanquin:700);
+
+
+ h1 {
+  color: #A6A49C;
+  font-family: 'Palanquin', Arial, sans- serif;
+}
+
+ p {
+  color: #474544;ṭ
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 14px;
+}
+
+ .modal {
+  opacity: 0;
+  padding: 50px;
+  position: absolute;
+  z-index: 1100;
+  -webkit-transition: opacity 600ms linear 600ms;
+  -moz-transition: opacity 600ms linear 600ms;
+  -ms-transition: opacity 600ms linear 600ms;
+  -o-transition: opacity 600ms linear 600ms;
+  transition: opacity 600ms linear 600ms;
+}
+
+ .modal_info {
+  background: #FCF9F2;
+  padding: 50px 100px;
+  text-align: center;
+}
+
+ .modal_overlay {
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  z-index: 900;
+  -webkit-transition: opacity 200ms linear;
+  -moz-transition: opacity 200ms linear;
+  -ms-transition: opacity 200ms linear;
+  -o-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+}
+
+ .display {
+  opacity: 1;
+  visibility: visible;
+}
+
+ .conceal {
+  visibility: visible;
+}
+
+ .btn_container {
+  height: 100%;
+  text-align: center;
+}
+
+
+
+ .open_button {
+  background: #363D4E;
+  display: inline-block;
+  height: 66px;
+  position: relative;
+  vertical-align: middle;
+  whitespace: normal;
+  width: 233.75px;
+  z-index: 1000;
+  -webkit-transition: opacity 100ms linear;
+  -moz-transition: opacity 100ms linear;
+  -ms-transition: opacity 100ms linear;
+  -o-transition: opacity 100ms linear;
+  transition: opacity 100ms linear;
+}
+
+ a.open_button {
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  line-height: 66px;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ a.open_button:hover {
+  background: #3E465A;
+}
+
+ a.open_button.load {
+  opacity: 0;
+}
+
+ button.modal_close {
+  background: #363D4E;
+  border: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  -webkit-transition: -webkit-transform 600ms;
+  -moz-transition: -moz-transform 600ms;
+  -ms-transition: -ms-transform 600ms;
+  -o-transition: -o-transform 600ms;
+  transition: transform 600ms;
+}
+
+ button.modal_close:hover {
+  background: #3E465A;
+  -webkit-transform: rotate(360deg) scale(1.10);
+  -moz-transform: rotate(360deg) scale(1.10);
+  -ms-transform: rotate(360deg) scale(1.10);
+  -o-transform: rotate(360deg) scale(1.10);
+  transform: rotate(360deg) scale(1.10);
+  -webkit-transition: -webkit-transform 600ms;
+  -moz-transition: -moz-transform 600ms;
+  -ms-transition: -ms-transform 600ms;
+  -o-transition: -o-transform 600ms;
+  transition: transform 600ms;
+}
+
+
+
+ button.modal_close span:first-child {
+  background: none;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+ button.modal_close span:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+ button.modal_close span:after {
+  -webkit-transform: translateY(-2px) rotate(-45deg);
+  -moz-transform: translateY(-2px) rotate(-45deg);
+  -ms-transform: translateY(-2px) rotate(-45deg);
+  -o-transform: translateY(-2px) rotate(-45deg);
+  transform: translateY(-2px) rotate(-45deg);
+  top: 2px;
+}
+
+
+</style>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	<div class="container">
+		<a class="navbar-brand" href="https://www.ecell.in" style="padding: 0" target="_blank"><img class="ecell" src="images/ecell_b.png" alt=""></a>
+		<a class="navbar-brand" href="https://www.ecell.in/esummit" style="padding: 0" target="_blank"><img class="esummit" src="images/logo_purple.png" alt=""></a>
+		<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle collapsed" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="oi oi-menu"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="ftco-nav">
+			<ul class="navbar-nav nav ml-auto">
+				<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+				<li class="nav-item"><a href="#about" class="nav-link"><span>About</span></a></li>
+				<li class="nav-item"><a href="#timeline" class="nav-link"><span>Timeline</span></a></li>
+				<li class="nav-item"><a href="#coaches-section" class="nav-link"><span>Investors</span></a></li>
+				<li class="nav-item"><a href="#faq_area" class="nav-link"><span>FAQ</span></a></li>
+				<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				<li class="nav-item"><div class="mybtn"><a href="register.php">Register</a></div></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<section id="home-section" class="hero">
+	<div class="js-fullheight">
+		<div class="row js-fullheight no-gutters">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align: center">
+				<div class="evntcover"><img src="images/ttmmcover.png" alt=""></div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align: center;">
+				<div class="evnt"><img src="images/ttmm.png" alt=""></div>
+				<div class="reg">
+					<div class="mybtn">
+						<a href="register.php">Register</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<img src="images/Ellipse_8.png" alt="" class="feature_icon_1 custom-animation1">
+	<img src="images/Ellipse_8.png" alt="" class="feature_icon_2 custom-animation2">
+	<img src="images/Ellipse_8.png" alt="" class="feature_icon_3 custom-animation3">
+	<img src="images/Ellipse_8.png" alt="" class="feature_icon_4 custom-animation4">
+	<img src="images/Ellipse_8.png" alt="" class="feature_icon_5 custom-animation5">
+	<img src="images/Ellipse_8.png" alt="" class="feature_icon_6 custom-animation6">
+</section>
+
+
+
+<section class="ftco-section bg-light">
+	<div class="container">
+		<div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 text-center heading-section ftco-animate">
+				<h2 class="mb-4 heading">Timeline</h2>
+			</div>
+		</div>
+		<div class="ftco-search">
+			<div class="row">
+				<div class="col-md-12 nav-link-wrap">
+					<div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Day 01 <span>01 Feb. 2020</span></a>
+
+						<a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Day 02 <span>02 Feb. 2020</span></a>
+
+
+
+					</div>
+				</div>
+				<div class="col-md-12 tab-wrap">
+
+					<div class="tab-content" id="v-pills-tabContent">
+
+						<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+							<div class="speaker-wrap ftco-animate d-flex">
+								<div class="img speaker-img" style="background-image: url(images/person_1.jpg);"></div>
+								<div class="text pl-md-5">
+
+									<h2><a href="#">IPL AUCTION</a></h2>
+									<h3>2:45-4:30 PM</h3>
+									<h3 class="speaker-name">&mdash;>LA 001</h3>
+								</div>
+							</div>
+							<div class="speaker-wrap ftco-animate d-flex">
+								<div class="img speaker-img" style="background-image: url(images/person_2.jpg);"></div>
+								<div class="text pl-md-5">
+
+									<h2><a href="#">TRIATHLON</a></h2>
+<h3>2:30-4:00 pm</h3>
+									<h3 class="speaker-name">&mdash; >LA 002</h3>
+								</div>
+							</div>
+							<div class="speaker-wrap ftco-animate d-flex">
+								<div class="img speaker-img" style="background-image: url(images/person_3.jpg);"></div>
+								<div class="text pl-md-5">
+
+									<h2><a href="#">BOARD ROOM</a></h2>
+<h3>12:30-4:15 pm</h3>
+<h3 class="speaker-name">&mdash; >LT101, LT102, LT103</h3>
+								</div>
+							</div>
+							<div class="speaker-wrap ftco-animate d-flex">
+								<div class="img speaker-img" style="background-image: url(images/person_2.jpg);"></div>
+								<div class="text pl-md-5">
+
+									<h2><a href="#">STOCKPITCH</a></h2>
+<h3>12:15-1:45 pm</h3>
+									<h3 class="speaker-name">&mdash; >LA 002</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+							<div class="speaker-wrap ftco-animate d-flex">
+								<div class="img speaker-img" style="background-image: url(images/person_1.jpg);"></div>
+								<div class="text pl-md-5">
+
+									<h2><a href="#">IPL AUCTION: Finale</a></h2>
+									<h3>10:45-2:30 PM</h3>
+									<h3 class="speaker-name">&mdash;>Convo Lawns </h3>
+								</div>
+							</div>
+							<div class="speaker-wrap ftco-animate d-flex">
+								<div class="img speaker-img" style="background-image: url(images/person_2.jpg);"></div>
+								<div class="text pl-md-5">
+
+									<h2><a href="#">TRIATHLON Mindsumo</a></h2>
+<h3>2:30-4:00 pm</h3>
+									<h3 class="speaker-name">&mdash; >LA 001</h3>
+								</div>
+							</div>
+							<div class="speaker-wrap ftco-animate d-flex">
+								<div class="img speaker-img" style="background-image: url(images/person_3.jpg);"></div>
+								<div class="text pl-md-5">
+
+									<h2><a href="#">WOLF OF WALL STREET</a></h2>
+<h3>2:15-4:30 pm</h3>
+<h3 class="speaker-name">&mdash; >LA 001</h3>
+								</div>
+							</div>
+							<div class="speaker-wrap ftco-animate d-flex">
+								<div class="img speaker-img" style="background-image: url(images/person_2.jpg);"></div>
+								<div class="text pl-md-5">
+
+									<h2><a href="#">GAME OF THRONES</a></h2>
+<h3>12:15-2:00 pm</h3>
+									<h3 class="speaker-name">&mdash; >LA 002</h3>
+								</div>
+							</div>
+						</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="about" class="services section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+							<h1 class="section-title wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;"></h1>
+							<div class="row justify-content-center mb-5 pb-3 no-gutters">
+								<div class="col-md-7 text-center heading-section ftco-animate">
+									<h2 class="mb-4 heading" >General Rules</h2>
+								</div>
+							</div>
+              <p style="text-align:left;padding-left:100px;padding-right:100px">
+              1. Number of team members required is mentioned in the description. Please make sure that you have the right numbers before reaching any competition venue.<br>
+2. All competitions will be open for on-ground registration as well. However, in case of high demand, participants registered online will be given preference.<br>
+3. You will be informed via mailer when the exact schedule is uploaded.<br>
+4. All competitions are completely free of cost.<br>
+5. In order to participate, you must either have E-Summit ID or IITB College ID.<br>
+6. Any violation of the above rules will lead to penalties.<br>
+	<br>
+	This is a humble request to all that competitions are designed to provide you with an interactive learning experience. Please do not get carried away with sentiments.<br>
+
+<strong>POINTS (FOR CONTINGENTS ONLY)</strong><br>
+1st - 600<br>
+2nd - 550<br>
+3rd - 500<br>
+4th - 450<br>
+5th - 400<br></p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+		<section class="ftco-section bg-light" id="mp">
+			<div class="btn_container">
+				<div class="row justify-content-center mb-5 pb-3 no-gutters">
+					<div class="col-md-7 text-center heading-section ftco-animate">
+						<h2 class="mb-4 heading">COMPETITIONS</h2>
+					</div>
+				</div>
+				<div class="row mb-30 text-center">
+					<div class="col-md-3 col-sm-3 col-xs-12">
+						<!--				<div></div>-->
+						<div>
+							<div class="spnsors-logo ftco-animate">
+								<div class="shan">
+
+								  <a class="open_button" href="#">IPL AUCTION</a>
+
+								<div class="modal_info">
+								  <h1>Simple jQuery Modal</h1>
+								  <p>It may not look like much, but it still does exactly what it says straight out of the box.</p>
+								</div>
+								<div class="modal_overlay">
+								</div>
+								</div>
+
+
+								<!-- <a href="https://www.meetingsandoffices.com/"><img class="img-fluid" src="images/meeting.jpg" alt=""></a> -->
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-12">
+						<div>
+							<div class="spnsors-logo ftco-animate">
+								<!-- <a href="https://www.meetingsandoffices.com/"><img class="img-fluid" src="images/meeting.jpg" alt=""></a> -->
+								<div class="shan">
+								<div class="btn_container">
+								  <a class="open_button" href="#">BOARD ROOM</a>
+								</div>
+								<div class="modal_info">
+								  <h1>Simple jQuery Modal</h1>
+								  <p>It may not look like much, but it still does exactly what it says straight out of the box.</p>
+								</div>
+								<div class="modal_overlay">
+								</div>
+								  </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-12">
+						<div>
+							<div class="spnsors-logo ftco-animate">
+								<!-- <a href="https://www.yourstory.com"><img class="img-fluid" src="images/ys.png" alt=""></a> -->
+								<div class="shan">
+								<div class="btn_container">
+								  <a class="open_button" href="#">WOLF OF WALL STREET</a>
+								</div>
+								<div class="modal_info">
+								  <h1>Simple jQuery Modal</h1>
+								  <p>It may not look like much, but it still does exactly what it says straight out of the box.</p>
+								</div>
+								<div class="modal_overlay">
+								</div>
+								  </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-12">
+
+										<div>
+											<div class="spnsors-logo ftco-animate">
+												<!-- <a href="https://www.yourstory.com"><img class="img-fluid" src="images/ys.png" alt=""></a> -->
+												<div class="shan">
+												<div class="btn_container">
+												  <a class="open_button" href="#">TRIATHLON</a>
+												</div>
+												<div class="modal_info">
+												  <h1>Simple jQuery Modal</h1>
+												  <p>It may not look like much, but it still does exactly what it says straight out of the box.</p>
+												</div>
+												<div class="modal_overlay">
+												</div>
+												  </div>
+											</div>
+										</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<section>
+	<div id="contact-section">
+		<div class="container" id="contactuss">
+			<div class="clear-fix contact-address-content">
+				<div class="left-side">
+					<div class="row no-gutters">
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+							<h2 class="heading ftco-animate">Contact Us</h2>
+							<div class="ftco-animate d-flex justify-content-center">
+								<ul>
+									<li>
+										<div class="icon tran3s round-border p-color-bg"><i class="fa fa-user" aria-hidden="true"></i></div>
+										<h6>For Queries</h6>
+										<p><span style="font-weight: bold"><a style="color: white;" href="https://www.linkedin.com/in/shubhamsingh12/">Shubham Singh</a></span><br>
+											<a href="tel:+919137057678">9137057678</a><br>
+											<a href="mailto:shubham@ecell.in">shubham@ecell.in</a>
+										</p>
+									</li>
+									<li>
+										<div class="icon tran3s round-border p-color-bg"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+										<h6>Address</h6>
+										<p>E-Cell Office, Student Activity Centre, IIT Bombay, Mumbai-400076</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+							<h2 class="heading ftco-animate">Send Message</h2>
+							<div>
+								<form action="#" class="p-4 p-md-5 contact-form">
+									<div class="form-group">
+										<input type="text" class="form-control" required placeholder="Your Name"/>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" required placeholder="Your Email"/>
+									</div>
+									<div class="form-group">
+										<textarea name="" cols="30" rows="7" class="form-control" required placeholder="Message"></textarea>
+									</div>
+									<div class="form-group">
+										<input type="submit" value="Send Message" class="py-3 px-5 submit">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ftco-animate">
+							<ul>
+								<li>
+									<div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+									<h6>For Sponsorship<br>Opportunities</h6>
+									<p><a href="mailto:marketing@ecell.in">marketing@ecell.in</a></p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ftco-animate">
+							<ul>
+								<li>
+									<div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+									<h6>For Speaking<br>Opportunities</h6>
+									<p><a href="mailto:speaking@ecell.in">speaking@ecell.in</a></p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ftco-animate">
+							<ul>
+								<li>
+									<div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+									<h6>For Association<br>Opportunities</h6>
+									<p><a href="mailto:associate@ecell.in">associate@ecell.in</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div> <!-- /.left-side -->
+			</div> <!-- /.contact-address-content -->
+		</div> <!-- /.container -->
+	</div> <!-- /#contact-section -->
+</section>
+
+<footer style="overflow-y: hidden">
+	<div class="container" style="max-width: 1000px">
+		<a data-aos="fade-down" href="https://ecell.in" class="logo"><img src="images/ecell.png" alt="Logo"></a>
+		<h3 data-aos="fade-down" style="margin-bottom: 0;">THE ENTREPRENEURSHIP CELL, IIT BOMBAY</h3>
+		<div class="footer">
+			<ul>
+				<li class="ftco-animate" ><a href="https://www.facebook.com/ecell.in/" target="_blank" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li class="ftco-animate"><a href="https://twitter.com/ecell_iitb" target="_blank" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li class="ftco-animate"><a href="https://www.instagram.com/ecell_iitb/" target="_blank" class="tran3s round-border"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li class="ftco-animate"><a href="https://www.linkedin.com/company/ecell_iitb/" target="_blank" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li class="ftco-animate"><a href="https://www.youtube.com/user/entrepreneurshipcell" target="_blank" class="tran3s round-border"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+		<p style="padding-top: 10px;border-top: 2px solid #8a57db;">Copyright @2019 All rights reserved | <a href="https://www.ecell.in/2018_1/team.php">Team 2019-20</a></p>
+	</div>
+</footer>
+
+<!-- Scroll Top Button -->
+<button class="scroll-top tran3s p-color-bg" style="cursor: pointer">
+	<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+</button>
+
+
+
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#8A57DB"></circle></svg></div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="js/google-map.js"></script>
+
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+<script>
+
+(function(){
+  var $content = $('.modal_info').detach();
+
+  $('.open_button').on('click', function(e){
+    modal.open({
+      content: $content,
+      width: 540,
+      height: 270,
+    });
+    $content.addClass('modal_content');
+    $('.modal, .modal_overlay').addClass('display');
+    $('.open_button').addClass('load');
+  });
+}());
+
+var modal = (function(){
+
+  var $close = $('<button role="button" class="modal_close" title="Close"><span></span></button>');
+  var $content = $('<div class="modal_content"/>');
+  var $modal = $('<div class="modal"/>');
+  var $window = $(window);
+
+  $modal.append($content, $close);
+
+  $close.on('click', function(e){
+    $('.modal, .modal_overlay').addClass('conceal');
+    $('.modal, .modal_overlay').removeClass('display');
+    $('.open_button').removeClass('load');
+    e.preventDefault();
+    modal.close();
+  });
+
+  return {
+    center: function(){
+      var top = Math.max($window.height() - $modal.outerHeight(), 0) / 2;
+      var left = Math.max($window.width() - $modal.outerWidth(), 0) / 2;
+      $modal.css({
+        top: top + $window.scrollTop(),
+        left: left + $window.scrollLeft(),
+      });
+    },
+    open: function(settings){
+      $content.empty().append(settings.content);
+
+      $modal.css({
+        width: settings.width || 'auto',
+        height: settings.height || 'auto'
+      }).appendTo('body');
+
+      modal.center();
+      $(window).on('resize', modal.center);
+    },
+    close: function(){
+      $content.empty();
+      $modal.detach();
+      $(window).off('resize', modal.center);
+    }
+  };
+}());
+
+</script>
+</body>
+</html>
